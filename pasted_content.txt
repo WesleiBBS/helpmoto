@@ -1,0 +1,107 @@
+🧭 Objetivo do Projeto
+O HelpMoto é um aplicativo de serviço de socorro e assistência para usuários de motocicletas, com foco em oferecer uma solução ágil, segura e eficiente para situações de pane, acidente ou dificuldade mecânica.
+O aplicativo conecta, em tempo real, motociclistas que precisam de ajuda a prestadores de serviço disponíveis e próximos, por meio de geolocalização inteligente. O serviço poderá ser solicitado:
+•	🛣️ Na estrada
+•	🏡 Em casa
+•	🏢 No trabalho
+•	🏙️ Em qualquer lugar que o usuário esteja com sua moto
+
+ 
+
+________________________________________
+⚙️ Como Funciona
+1. Cadastro
+•	Usuário realiza cadastro com seus dados pessoais e da moto.
+•	Prestadores de serviço se cadastram com documentação, especialidades e localização.
+2. Solicitação de Socorro
+•	Usuário abre um chamado no app.
+•	Sistema identifica o prestador de serviço mais próximo e disponível.
+•	Prestador recebe notificação e aceita o atendimento.
+3. Geolocalização
+•	O app usa GPS para rastrear a localização do usuário e traçar a rota do prestador.
+•	A distância determina o valor do serviço conforme tabela de preço por quilômetro.
+________________________________________
+💰 Modelo Comercial
+O HelpMoto oferece dois modelos de atendimento:
+📍 Avulso
+•	Valor do serviço calculado com base em:
+o	Distância do prestador até o usuário
+o	Distância do local de socorro até o destino final
+o	Horário do atendimento e dia da semana pode influenciar na tabela de preço
+•	Tabela de preço baseada em faixas de KM e valor de mercado atualizado do frete.
+•	O HelpMoto retém um percentual de comissão sobre o valor pago.
+•	Pagamento direto no app via:
+o	Cartão de crédito
+o	Pix
+o	Débito automático
+📅 Mensalista
+•	Assinatura mensal com direito a:
+o	X atendimentos por mês
+o	Limite de KM por socorro
+•	O sistema verifica se o usuário está com mensalidade em dia antes de liberar o chamado.
+•	Pagamento direto no app via:
+o	Cartão de crédito
+o	Pix
+o	Débito automático
+________________________________________
+📊 Gráfico do Modelo de Negócio
+USUÁRIO
+   ↓
+Solicita Socorro
+   ↓
+HELPMOTO (Sistema)
+   ↓          ↓
+Geolocaliza     Calcula Preço
+   ↓                ↓
+Seleciona Prestador
+   ↓
+PRESTADOR ACEITA
+   ↓
+Prestador Atende
+   ↓
+PAGAMENTO (App)
+   ↓                ↓
+Prestador Recebe     HelpMoto Retém Comissão e repassa ao prestador o valor dele no final do dia
+________________________________________
+🧩 Principais Módulos do Sistema
+👤 Módulo Cliente:
+•	Cadastro
+•	Veículos
+•	Solicitação de Socorro
+•	Histórico de atendimentos
+•	Modalidades de pagamento
+🛠️ Módulo Prestador:
+•	Cadastro com documentação
+•	Status (disponível/indisponível)
+•	Aceitação de chamados
+•	Histórico de atendimentos
+🧾 Módulo Administrativo:
+•	Cadastro de Tabela de Preços por KM
+•	Cadastro de Planos Mensalistas
+•	Gestão de Comissões
+•	Relatórios de atendimentos
+•	Gestão de pagamentos
+________________________________________
+🌍 Fluxo com Geolocalização
+ 
+________________________________________
+🖼️ Wireframe Conceitual – Tela do Usuário
+ 
+________________________________________
+🖼️ Wireframe Conceitual – Tela do Prestador
+ 
+________________________________________
+🧮 Exemplo de Cálculo de Atendimento Avulso
+Origem	Destino	Distância (km)	Valor por KM	Valor Total
+Local do prestador → Local do socorro	10 km	R$ 2,00/km	R$ 20,00	
+Local do socorro → Oficina do usuário	5 km	R$ 2,00/km	R$ 10,00	
+Total do Serviço				R$ 30,00
+Comissão do HelpMoto (20%)				R$ 6,00
+Valor Líquido ao Prestador				R$ 24,00
+________________________________________
+📌 Diferenciais do HelpMoto
+✅ Atendimento rápido com base em localização
+✅ Cobertura em diversas regiões
+✅ Transparência no valor do serviço
+✅ Modelo flexível (avulso e assinatura)
+✅ Gestão completa via aplicativo
